@@ -1,0 +1,91 @@
+.titleContainer {
+    max-width: 100%;
+    margin-left: 257px;
+    padding: 51px 65px 0 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* UserDetails section  */
+
+.titleContainer .header {
+
+    width: 580px;
+    height: 99px;
+    color: #081735;
+}
+
+.titleContainer .header .username {
+    font-size: 24px;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+}
+
+.titleContainer .header .welcome {
+    height: 48px;
+    display: flex;
+}
+
+.titleContainer .header .welcome h2 {
+    font-size: 48px;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    line-height: 48px;
+    height: 48px;
+}
+
+.titleContainer .header .welcome img {
+    height: 48px;
+    width: 48px;
+
+}
+
+/* Search and Notification */
+
+.titleContainer .sn {
+    display: flex;
+}
+
+/* Search section  */
+
+
+.titleContainer .searchBar {
+    width: 214px;
+    height: 48px;
+    border-radius: 12px;
+    background: #E6E8F0;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    
+}
+
+.titleContainer .searchBar input {
+    box-sizing: border-box;
+    height: 20px;
+    width: 100%;
+    padding: 0;
+    color: #081735;
+    font-size: 14px;
+    margin: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+/* Notification section  */
+.titleContainer .notification {
+    width: 48px;
+    height: 48px;
+    margin-inline: 48px 12px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 18px 13px rgba(108, 93, 211, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
