@@ -1,0 +1,148 @@
+/* Sidebar styling */
+
+.sidebar {
+    width: 256px;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-right: 1px solid #E6E8F0;
+    font-size: 14px;
+
+}
+
+
+/* Sidebar header */
+
+.sidebar .header {
+    /* display: flex; */
+    height: 136px;
+}
+
+.sidebar .header .logo {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 52px 0 42px 42px;
+    gap: 8px;
+}
+
+.sidebar .header .logo .brand {
+    color: rgba(108, 93, 211, 1);
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    height: min-content;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Sidebar Menu Items */
+
+.sidebar .navSidebar {
+    padding: 0 20px;
+}
+
+.sidebar ul.menuItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .navSidebar ul.menuItems li {
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    color: rgba(143, 149, 178, 1);
+    font-weight: 700;
+    padding: 16px 20px;
+    width: 176px;
+    align-items: center;
+}
+
+.sidebar .navSidebar ul.menuItems li p {
+    width: 112px;
+    padding-left: 16px;
+}
+
+
+/* Sidebar GetPro */
+
+
+.sidebar .getPro {
+    background: linear-gradient(135deg, #FFB7F5 0%, #6C5DD3 100%);
+    width: 216px;
+    height: 159px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 28px 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.sidebar .getPro p {
+    width: 142px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.sidebar .getPro button {
+    width: 196px;
+    height: 44.1px;
+    border-radius: 70px;
+    background: #fff;
+    border: none;
+    color: rgba(108, 93, 211, 1);
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 700;
+
+}
+
+/* Sidebar User Section */
+
+.sidebar .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96px;
+    width: 256px;
+    align-self: flex-end;
+}
+
+.sidebar .user .avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 16px;
+
+}
+
+.sidebar .user .avatar img {
+    object-fit: cover;
+}
+
+.sidebar .user .userDetails .username {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 14px;
+    height: 20px;
+    width: 96px;
+    color: rgba(8, 23, 53, 1);
+}
+
+.sidebar .user .userDetails .profession {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    height: 20px;
+    width: 96px;
+    color: rgba(143, 149, 178, 1);
+
+}
