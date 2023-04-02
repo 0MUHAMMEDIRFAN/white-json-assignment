@@ -1,0 +1,290 @@
+.product {
+    padding: 40px 65px 0 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 257px;
+    box-sizing: border-box;
+}
+
+.product .heading {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 24px;
+    color: #081735;
+    line-height: 32px;
+}
+
+.product .container {
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px rgba(143, 149, 178, 0.15);
+    width: 100%;
+    min-height: 100px;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 24px;
+}
+
+/* productContainer in container  */
+
+.product .container .productContainer {
+    display: flex;
+    gap: 74px;
+
+}
+
+/* product images section */
+
+.product .container .productContainer .productImage {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 308px;
+    height: 495px;
+    column-gap: 10px;
+    row-gap: 40px;
+    padding-inline: 8px 0;
+}
+
+.product .container .productContainer .productImage .mainImg {
+    position: relative;
+    grid-column: 1 / span 3;
+    width: 308px;
+    overflow: hidden;
+    height: 359px;
+    border-radius: 16px;
+}
+
+.product .container .productContainer .productImage .mainImg .zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* product Name and other details */
+
+.product .container .productContainer .productDetails {
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito Sans";
+    padding-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    gap: 16px;
+    color: #8F95B2;
+}
+
+.product .container .productContainer .productDetails .productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* name */
+
+.product .container .productContainer .productDetails h4 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #081735;
+    height: 32px;
+    line-height: 32px;
+}
+
+/* prosuct rating */
+
+.product .container .productContainer .productDetails .rating {
+    height: 16px;
+    width: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* product price */
+
+.product .container .productContainer .productDetails .price {
+    padding: 8px 0;
+
+}
+
+/* Product in stock  */
+
+.product .container .productContainer .productDetails .available {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF754C;
+    height: 32px;
+    width: 101px;
+    font-size: 14px;
+    background: #FFEBF6;
+    border-radius: 24px;
+}
+
+/* quantity selection buttons section */
+
+.product .container .productContainer .productDetails .qtySelection {
+    display: flex;
+    gap: 18.21px;
+    padding-block: 8px 16px;
+}
+
+.product .container .productContainer .productDetails .qtySelection .adjust {
+    display: flex;
+}
+
+.product .container .productContainer .productDetails .qtySelection .adjust div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50.07px;
+    font-family: 'Lato';
+    font-style: normal;
+    color: #081735;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.product .container .productContainer .productDetails .qtySelection .adjust button {
+    background: #E6E8F0;
+    border-radius: 4px;
+    height: 44px;
+    color: #081735;
+    width: 47.03px;
+    font-size: 26px;
+    letter-spacing: -3px;
+}
+
+/* addcart button */
+
+.product .container .productContainer .productDetails .qtySelection .addCart button {
+    background: #0049C6;
+    box-shadow: 0px 8px 16px rgba(143, 149, 178, 0.15);
+    border-radius: 8px;
+    height: 43.79px;
+    width: 176px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Lato';
+    font-weight: 700;
+    line-height: 20px;
+}
+
+/* product description */
+
+.product .container .productContainer .productDetails h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.product .container .productContainer .productDetails .descriptionText {
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+/* Product container last section stock details */
+
+.product .container .productContainer .productDetails .stock {
+    display: flex;
+    align-items: center;
+    margin-top: 11.5px;
+}
+
+.product .container .productContainer .productDetails .stock div:not(:last-child) {
+    padding-right: 60px;
+    border-right: #E6E8F0 1px solid;
+}
+
+.product .container .productContainer .productDetails .stock div:not(:first-child) {
+    padding-left: 60px;
+
+}
+
+.product .container .productContainer .productDetails .stock div>p:first-child {
+    color: #FF9A7B;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.product .container .productContainer .productDetails .stock div>p:last-child {
+    font-size: 16px;
+    line-height: 24px;
+    color: #081735;
+}
+
+/* Other stock details in Container (Table) */
+
+.product .container .stockDetails {}
+
+
+
+.product .container .stockDetails .headingRow {
+    width: 100%;
+    height: 65px;
+    background: rgba(108, 93, 211, 0.1);
+}
+.product .container .stockDetails .headingRow th{
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 32px;
+}
+
+.product .container .stockDetails tr {
+    height: 65px;
+}
+.product .container .stockDetails tr:not(:first-child) td{
+    border-bottom: solid 1px #E6E8F0;
+    /* border-style: none none solid none; */
+}
+.product .container .stockDetails td {
+    color: #8F95B2;
+    padding-left: 32px;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    line-height: 20px;
+}
+.product .container .stockDetails .progressCol {
+}
+.product .container .stockDetails .progressCol>div {
+    width: 234px;
+    height: 8px;
+    background: #E6E8F0;
+    display: inline-block;
+    /* margin-right: 10px; */
+}
+.product .container .stockDetails .progressCol div .value {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #FFB7F5 0%, #6C5DD3 100%);
+    
+}
+.product .container .stockDetails .progressCol p {
+    padding-left: 12px;
+    display: inline;
+}
+
+
+/* table heading row border radius */
+
+.product .container .stockDetails .headingRow th:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.product .container .stockDetails .headingRow th:last-child {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
