@@ -1,6 +1,6 @@
 .titleContainer {
     max-width: 100%;
-    margin-left: 257px;
+    /* margin-left: 257px; */
     padding: 51px 65px 0 65px;
     display: flex;
     justify-content: space-between;
@@ -61,7 +61,7 @@
     padding: 0 20px;
     box-sizing: border-box;
     margin-top: 5px;
-    
+
 }
 
 .titleContainer .searchBar input {
@@ -88,4 +88,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1024px) {
+    .titleContainer .sn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .titleContainer {
+        padding: 24px 32px;
+    }
+
+    .titleContainer .header .welcome img {
+        display: none;
+    }
+
+    .titleContainer .header .username {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .titleContainer .header .welcome h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
 }

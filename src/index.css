@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 
 body {
   background: #FAFBFF;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  margin-left: 257px;
+  height: 100%;
 }
 
 a {
@@ -13,6 +20,7 @@ a {
 body {
   margin: 0;
   min-height: 100vh;
+  min-width: 350px;
 }
 
 ul {
@@ -47,6 +55,9 @@ button {
   outline: none;
   border: none;
 }
+button:active {
+  transform: scale(95%);
+}
 
 table {
   border: none;
@@ -63,4 +74,18 @@ tr {
 th,
 td {
   text-align: unset;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1160px) {
+  .dashboard{
+    margin-left: 97px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .dashboard{
+    margin-left: 0;
+    margin-top: 97px;
+  }
 }

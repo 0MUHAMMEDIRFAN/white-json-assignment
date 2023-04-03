@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Sidebar.css"
+import avatar from "../../assets/avatar.svg"
 import Logo from "../../assets/logo.svg"
 import Action from "../../assets/Action.svg"
 import Bag from "../../assets/Bag.svg"
@@ -15,88 +16,93 @@ import ArrowList from "../../assets/List.svg"
 
 function Sidebar() {
   return (
-    <div className='sidebar'>
-
-      {/* Header section  */}
-      <div className="header">
-        <div className='logo'>
-          <img src={Logo} alt="Logo" />
-          <h4 className='brand'>Test 1</h4>
+    <div>
+      <div className='sidebar shown' id='sidebar'>
+        {/* Header section  */}
+        <div className="header">
+          <div className='logo'>
+            <img src={Logo} alt="Logo" />
+            <h4 className='brand'>Test 1</h4>
+          </div>
         </div>
-      </div>
 
-      {/* Menu Items  */}
+        {/* Menu Items  */}
 
-      <div className="navSidebar">
-        <ul className='menuItems'>
-          <li>
-            <img src={Dashboard} alt="" />
-            <p>Dashboard</p>
-            <img src={Action} alt="" />
-          </li>
-          <li>
-            <img src={Bag} alt="" />
-            <p>E-commerce</p>
-            <img src={Action} alt="" />
-          </li>
-          <li>
-            <img src={Chart} alt="" />
-            <p>Pages</p>
-            <img src={Action} alt="" />
-          </li>
-          <li>
-            <img src={Discovery} alt="" />
-            <p>Users</p>
-          </li>
-          <li>
-            <img src={Wallet} alt="" />
-            <p>Invoices</p>
-            <img src={Action} alt="" />
-          </li>
-          <li>
-            <img src={Document} alt="" />
-            <p>Projects</p>
-            <img src={Action} alt="" />
-          </li>
-          <li>
-            <img src={Paper} alt="" />
-            <p>Tasks</p>
-            <img src={Action} alt="" />
-          </li>
-          <li>
-            <img src={Calendar} alt="" />
-            <p>Calendar</p>
-          </li>
-          <li>
-            <img src={Lock} alt="" />
-            <p>Authentication</p>
-            <img src={Action} alt="" />
-          </li>
-        </ul>
-      </div>
-
-      {/* Get Pro Section  */}
-
-      <div className="getPro">
-        <p className="title">Upgrade to PRO to get
-          access to all features!</p>
-        <button>Get Pro Now</button>
-      </div>
-
-      {/* User section  */}
-
-      <div className="user">
-        <div className="avatar">
-          <img src="" alt="" />
+        <div className="navSidebar">
+          <ul className='menuItems'>
+            <li>
+              <img src={Dashboard} alt="" />
+              <p>Dashboard</p>
+              <img src={Action} className="action" alt="" />
+            </li>
+            <li>
+              <img src={Bag} alt="" />
+              <p>E-commerce</p>
+              <img src={Action} className="action" alt="" />
+            </li>
+            <li>
+              <img src={Chart} alt="" />
+              <p>Pages</p>
+              <img src={Action} className="action" alt="" />
+            </li>
+            <li>
+              <img src={Discovery} alt="" />
+              <p>Users</p>
+              <div className="blank"></div>
+            </li>
+            <li>
+              <img src={Wallet} alt="" />
+              <p>Invoices</p>
+              <img src={Action} className="action" alt="" />
+            </li>
+            <li>
+              <img src={Document} alt="" />
+              <p>Projects</p>
+              <img src={Action} className="action" alt="" />
+            </li>
+            <li>
+              <img src={Paper} alt="" />
+              <p>Tasks</p>
+              <img src={Action} className="action" alt="" />
+            </li>
+            <li>
+              <img src={Calendar} alt="" />
+              <p>Calendar</p>
+              <div className="blank"></div>
+            </li>
+            <li>
+              <img src={Lock} alt="" />
+              <p>Authentication</p>
+              <img src={Action} className="action" alt="" />
+            </li>
+          </ul>
         </div>
-        <div className="userDetails">
-          {/*dynamic userdetails*/}
-          <p className='username'>Jane Eyre</p>
-          <p className='profession'>UX Designer</p>
+
+        {/* Get Pro Section  */}
+
+        <div className="getPro">
+          <p className="title">Upgrade to PRO to get
+            access to all features!</p>
+          <button>Get Pro Now</button>
         </div>
-        <img src={ArrowList} alt="" />
+
+        {/* User section  */}
+
+        <div className="user">
+          <div className="avatar">
+            <img src={avatar} alt="" />
+          </div>
+          <div className="userDetails">
+            {/*dynamic userdetails*/}
+            <p className='username'>Jane Eyre</p>
+            <p className='profession'>UX Designer</p>
+          </div>
+          <img src={ArrowList} alt="" />
+        </div>
+        <div className="closer" onClick={() => { document.getElementById("sidebar").classList.toggle("shown") }}><span></span></div>
       </div>
     </div>
+
   )
 }
 

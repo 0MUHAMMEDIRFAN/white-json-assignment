@@ -1,0 +1,59 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FAFBFF;
+    padding: 0 32px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+    box-sizing: border-box;
+    z-index: 199;
+    border-bottom: 1px solid #E6E8F0;
+}
+
+.navbar .burgerIconContainer {
+    cursor: pointer;
+    display: flex;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    flex-direction: column;
+}
+
+.navbar .burgerIconContainer .burgerIcon {
+    background: #081735;
+    height: 2px;
+    width: 32px;
+    border-radius: 1px;
+}
+
+.navbar .otherIcon {
+    display: flex;
+    width: 186px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width:1160px) and (min-width:576px) {
+    .navbar {
+        left: 0;
+        display: flex;
+        width: 96px;
+        border-right: 1px solid #E6E8F0;
+        background: #FFFFFF;
+        position: absolute;
+    }
+
+    .navbar>:not(:first-child) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .navbar {
+        display: flex;
+    }
+}

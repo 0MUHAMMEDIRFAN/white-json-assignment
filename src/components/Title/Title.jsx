@@ -8,7 +8,7 @@ function Title() {
     return (
         <div className='titleContainer'>
             <div className="header">
-                <h5 className='username'>Hi Jane Eyre,</h5> {/*dynamic username */}
+                <h5 className='username'>Hi Jane Eyre,</h5> {/*dynamic username user.username */}
                 <div className='welcome'>
                     <h2>Welcome back&nbsp;</h2>
                     <img src={Hand} alt="" />
