@@ -380,6 +380,9 @@
     .product .container .productContainer .productDetails .stock .nofOrders {
         text-align: center;
     }
+    .product .container .productContainer .productDetails .stock .revenue {
+        text-align: end;
+    }
 
     /* On Mobiles */
 }
