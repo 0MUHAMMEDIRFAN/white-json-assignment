@@ -2,8 +2,9 @@
 
 .sidebar {
     width: 256px;
-    min-height: 100%;
-    position: absolute;
+    height: 100%;
+    position: fixed;
+    /* box-sizing: border-box; */
     top: 0;
     left: 0;
     display: flex;
@@ -37,6 +38,7 @@
     color: rgba(108, 93, 211, 1);
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
+    white-space: nowrap;
     height: min-content;
     font-size: 32px;
     font-weight: 700;
@@ -45,13 +47,17 @@
 /* Sidebar Menu Items */
 
 .sidebar .navSidebar {
-    padding: 0 20px;
+    padding: 0 15px 0 20px;
     z-index: 50;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .sidebar ul.menuItems {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    
 }
 
 .sidebar .navSidebar ul.menuItems li:hover {
@@ -102,7 +108,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin: 28px 20px;
+    margin: 0 20px;
     align-items: center;
     justify-content: center;
     font-family: 'Lato', sans-serif;
@@ -141,6 +147,7 @@
     height: 96px;
     width: 256px;
     gap: 16px;
+    cursor: pointer;
     /* align-self: flex-end; */
 
 }
@@ -214,16 +221,21 @@
     .sidebar {
         overflow: hidden;
         padding-top: 96px;
+        box-sizing: border-box;
+        width: 257px;
     }
 
     .shown {
         /* padding: 0; */
-        width: 96px;
+        width: 97px;
 
     }
 
-    .shown .header {
+    .sidebar .header {
         height: 113px;
+    }
+    .sidebar .header .logo{
+        overflow: hidden;
     }
 
     .shown .navSidebar ul.menuItems li {
@@ -236,7 +248,7 @@
         display: none;
     }
 
-    .shown .getPro {
+    .sidebar .getPro {
         display: none;
     }
 

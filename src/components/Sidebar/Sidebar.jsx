@@ -31,7 +31,7 @@ function Sidebar() {
         <div className="navSidebar">
           <ul className='menuItems'>
             <li>
-              <img src={Dashboard} alt="" />
+              <img src={Dashboard}  alt="" />
               <p>Dashboard</p>
               <img src={Action} className="action" alt="" />
             </li>

@@ -44,7 +44,7 @@
         width: 96px;
         border-right: 1px solid #E6E8F0;
         background: #FFFFFF;
-        position: absolute;
+        position: fixed;
     }
 
     .navbar>:not(:first-child) {
