@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import "./Navbar.css"
 import Search from "/src/assets/Search.svg"
 import bell from "/src/assets/bell.svg"
-import avatar from "/src/assets/avatar.svg"
+import avatar from "/src/assets/Avatar.svg"
 
 
 
