@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Order.css"
-import orderedit from "../../assets/orderedit.svg"
-import trash from "../../assets/trash.svg"
+import orderedit from "/src/assets/orderedit.svg"
+import trash from "/src/assets/trash.svg"
 
 function Order() {
     const orders = [
