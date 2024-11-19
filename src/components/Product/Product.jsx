@@ -5,7 +5,7 @@ import image2 from "/src/Images/ProductImages/Group 2.png"
 import image3 from "/src/Images/ProductImages/Group 3.png"
 import image4 from "/src/Images/ProductImages/Group 4.png"
 import Zoom from "/src/Images/ProductImages/Zoom.png"
-import star from "/src/assets/star.svg"
+import star from "/src/assets/Star.svg"
 import edit from "/src/assets/edit.svg"
 
 function Product() {
