@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Sidebar.css"
-import avatar from "/src/assets/avatar.svg"
-import Logo from "/src/assets/logo.svg"
+import avatar from "/src/assets/Avatar.svg"
+import Logo from "/src/assets/Logo.svg"
 import Action from "/src/assets/Action.svg"
 import Bag from "/src/assets/Bag.svg"
 import Calendar from "/src/assets/Calendar.svg"
