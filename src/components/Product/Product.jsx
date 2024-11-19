@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Product.css"
-import image1 from "../../Images/ProductImages/Group 1.png"
-import image2 from "../../Images/ProductImages/Group 2.png"
-import image3 from "../../Images/ProductImages/Group 3.png"
-import image4 from "../../Images/ProductImages/Group 4.png"
-import Zoom from "../../Images/ProductImages/Zoom.png"
-import star from "../../assets/star.svg"
-import edit from "../../assets/edit.svg"
+import image1 from "/src/Images/ProductImages/Group 1.png"
+import image2 from "/src/Images/ProductImages/Group 2.png"
+import image3 from "/src/Images/ProductImages/Group 3.png"
+import image4 from "/src/Images/ProductImages/Group 4.png"
+import Zoom from "/src/Images/ProductImages/Zoom.png"
+import star from "/src/assets/star.svg"
+import edit from "/src/assets/edit.svg"
 
 function Product() {
 
