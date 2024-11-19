@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Title.css"
-import Search from "../../assets/Search.svg"
-import bell from "../../assets/bell.svg"
-import Hand from "../../assets/Hand.png"
+import Search from "/src/assets/Search.svg"
+import bell from "/src/assets/bell.svg"
+import Hand from "/src/assets/Hand.png"
 
 function Title() {
     return (
