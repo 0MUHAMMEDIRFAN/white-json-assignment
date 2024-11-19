@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import "./Navbar.css"
-import Search from "../../assets/Search.svg"
-import bell from "../../assets/bell.svg"
-import avatar from "../../assets/avatar.svg"
+import Search from "/src/assets/Search.svg"
+import bell from "/src/assets/bell.svg"
+import avatar from "/src/assets/avatar.svg"
 
 
 
