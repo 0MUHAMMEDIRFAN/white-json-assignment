@@ -17,7 +17,7 @@ function Animation() {
 
             {/* remove this */}
 
-            <button onClick={() => { navigate("/white-json/Login") }} className='gotoButton'>go to login page</button>
+            <button onClick={() => { navigate("/Login") }} className='gotoButton'>go to login page</button>
         </div>
     )
 }

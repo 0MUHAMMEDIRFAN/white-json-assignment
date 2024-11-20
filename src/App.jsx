@@ -24,15 +24,16 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path='white-json/' element={<Home />} />
-          <Route exact path='white-json/Login' element={<Login/>} />
-          <Route path='white-json/dashboard' element={<Dashboard />} />
-          <Route path='white-json/ecommerse' element={<Ecommerse />} />
-          <Route path='white-json/pages' element={<Pages />} />
-          <Route path='white-json/users' element={<Users />} />
-          <Route path='white-json/projects' element={<Projects />} />
-          <Route path='white-json/tasks' element={<Tasks />} />
-          <Route path='white-json/authentication' element={<Authentication />} />
+          {/* <Route exact path='/' element={<Home />} /> */}
+          {/* <Route exact path='/Login' element={<Login/>} /> */}
+          <Route path='/' element={<Dashboard />} />
+          {/* <Route path='/dashboard' element={<Dashboard />} /> */}
+          <Route path='/ecommerse' element={<Ecommerse />} />
+          <Route path='/pages' element={<Pages />} />
+          <Route path='/users' element={<Users />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/tasks' element={<Tasks />} />
+          <Route path='/authentication' element={<Authentication />} />
         </Routes>
       </Router>
     </div>

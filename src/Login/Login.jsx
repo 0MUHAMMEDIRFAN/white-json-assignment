@@ -61,7 +61,7 @@ function Login() {
             </form>
 
             {/* remove this */}
-            <button onClick={() => { navigate("/white-json/Dashboard") }}>go to dashboard</button>
+            <button onClick={() => { navigate("/Dashboard") }} className='gotoButton' > go to dashboard</button>
 
         </div>
     )
